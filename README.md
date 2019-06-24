@@ -1,7 +1,8 @@
 
+
 # Omnia Russica 
 
-![](/assets/banner.png)
+![](/assets/banner2.png)
 
 Omnia Russica (_lat. all Russian_) is an open source corpus project, containing 33 billion words.
 
