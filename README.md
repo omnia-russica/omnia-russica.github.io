@@ -1,5 +1,4 @@
 # Omnia Russica 
-### Even larger Russian corpus
 
 ![](/assets/part2.png)
 
