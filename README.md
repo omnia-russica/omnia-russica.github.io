@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# Omnia Russica 
+### Even larger Russian corpus
 
-You can use the [editor on GitHub](https://github.com/omnia-russica/omnia-russica.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Omnia Russica (_lat. all Russian_) is an open source corpus project, containing 33 billion words.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Omnia Russica is combining major Russian corpus sources within one pipeline
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+|                  | Format     | Morphology | Syntax | Size  |
+|------------------|------------|------------|--------|-------|
+| Wikipedia        | vertical   | TreeTagger | None   | 0.5 G |
+| Taiga            | CoNLL-U    | UDpipe     | UDpipe | 4.5 G |
+| Araneum Russicum | vertical   | TreeTagger | None   | 25 G  |
+| Common Crawl     | Plain text | None       | None   | 3 G   |
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Download
+[Download plain text data (97 Gb)](url)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+###  Contact and cite us
 
-**Bold** and _Italic_ and `Code` text
+ - omnia.russica@yandex.ru
 
-[Link](url) and ![Image](src)
-```
+ - T.Shavrina and V.Benko (2019) Omnia Russica: Even larger Russian corpus. In Proc.Corpora. 
+ 
+Check out our [documentation on github](https://github.com/omnia-russica/pipeline) 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Pipeline
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/omnia-russica/omnia-russica.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For merging the data, the following principles are applied:
+    • metadata contained in the respective parts should be preserved;
+    • the primary format will be (No)SkE-compatible vertical, CoNLL-U format can be obtained by conversion if necessary;
+    • all data will be tagged both by UDPipe and TreeTagger at first, with possible more annotations added in the future;
+    • both original and deduplicated version will be available;
+    • for online search, the corpus will be processed by NoSketch Engine.
+    
+At the time of writing this paper (May 2019), all respective data has been collected and preprocessed, except Common Crawl part, which is still being scaled to the limit. Now, the Wikipedia and Araneum Russicum corpora need to be retagged by UDPipe, and Taiga by TreeTagger to get a uniform format suitable for subsequent merging and optional deduplication; Common Crawl part should be  also deduplicated and processed. 
