@@ -22,7 +22,7 @@ Omnia Russica is combining major Russian corpus sources within one pipeline
 
 
 ### Download
-[Download plain text data (97 Gb)](url)
+[Download plain text data (97 Gb)](http://bit.ly/2ZT4BY9)
 
 
 ### Web Interface
